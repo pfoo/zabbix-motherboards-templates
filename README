@@ -1,4 +1,9 @@
 Supermicro A1SAM-2750F (IPMI)
-DN2800MT (zabbix-agent, coretemp & winbond 83627)
-RaspberryPi
-Cubox
+
+DN2800MT: Need zabbix-agent installed, using coretemp & winbond 83627ehf driver
+	  Load coretemp and w83627ehf modules in /etc/modules
+	  Based on BIOS values
+
+RaspberryPi:
+
+Cubox: need zabbix-agent installed and a kernel providing imx thermal sensor support (check if /sys/class/hwmon/hwmon0/temp1_input exists)
