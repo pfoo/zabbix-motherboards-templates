@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2016-02-24T08:43:50Z</date>
+    <version>3.0</version>
+    <date>2016-05-29T07:47:23Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -29,221 +29,6 @@
                 </application>
             </applications>
             <items>
-                <item>
-                    <name>+3.3V Voltage</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in3]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>V</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Power</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>+5V Voltage</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>1</multiplier>
-                    <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in4]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>V</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>5</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Power</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>+12V voltage</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>1</multiplier>
-                    <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in1]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>V</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>12</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Power</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>3VSB Voltage</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in7]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>V</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Power</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>AVCC voltage</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in2]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>V</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Power</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
                 <item>
                     <name>CPU core0 temp</name>
                     <type>0</type>
@@ -331,19 +116,19 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>DIMM temp</name>
+                    <name>Vcore voltage</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,temp1]</key>
+                    <key>sensor[w83627dhg-isa-0290,in0]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units>°C</units>
+                    <units>V</units>
                     <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -367,7 +152,222 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Temperature</name>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>+12V voltage</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>1</multiplier>
+                    <snmp_oid/>
+                    <key>sensor[w83627dhg-isa-0290,in1]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>12</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>AVCC voltage</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>sensor[w83627dhg-isa-0290,in2]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>+3.3V Voltage</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>sensor[w83627dhg-isa-0290,in3]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>+5V Voltage</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>1</multiplier>
+                    <snmp_oid/>
+                    <key>sensor[w83627dhg-isa-0290,in4]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>5</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Vdimm Voltage</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>sensor[w83627dhg-isa-0290,in5]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -380,6 +380,49 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>sensor[w83627dhg-isa-0290,in6]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>V</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>3VSB Voltage</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>sensor[w83627dhg-isa-0290,in7]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -460,19 +503,19 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Vcore voltage</name>
+                    <name>DIMM temp</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in0]</key>
+                    <key>sensor[w83627dhg-isa-0290,temp1]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units>V</units>
+                    <units>°C</units>
                     <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -496,50 +539,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Power</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Vdimm Voltage</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>sensor[w83627dhg-isa-0290,in5]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>V</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Power</name>
+                            <name>Temperature</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -598,7 +598,7 @@
     <triggers>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in3].last()}&gt;3.632 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in3].last()}&lt;2.976</expression>
-            <name>+3.3V Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>+3.3V Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -608,7 +608,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in4].last()}&gt;5.240 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in4].last()}&lt;4.760</expression>
-            <name>+5V Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>+5V Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -618,7 +618,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in1].last()}&gt;12.576 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in1].last()}&lt;11.424</expression>
-            <name>+12V Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>+12V Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -628,7 +628,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in7].last()}&gt;3.632 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in7].last()}&lt;2.976</expression>
-            <name>3VSB Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>3VSB Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -638,7 +638,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in2].last()}&gt;3.632 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in2].last()}&lt;2.976</expression>
-            <name>AVCC Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>AVCC Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -648,7 +648,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[coretemp-isa-0000,temp2].last()}&gt;100</expression>
-            <name>CPU core0 temperature critical : {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>CPU core0 temperature critical : {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -658,7 +658,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[coretemp-isa-0000,temp3].last()}&gt;100</expression>
-            <name>CPU core1 temperature critical : {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>CPU core1 temperature critical : {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -668,7 +668,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,temp1].last()}&gt;80</expression>
-            <name>DIMM Temp Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>DIMM Temp Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -678,7 +678,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in6].last()}&gt;1.104 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in6].last()}&lt;1.000</expression>
-            <name>PCH Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>PCH Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -688,7 +688,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in8].last()}&gt;3.632 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in8].last()}&lt;2.704</expression>
-            <name>Vbat Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>Vbat Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -698,7 +698,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in0].last()}&gt;1.224 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in0].last()}&lt;0.744</expression>
-            <name>Vcore Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>Vcore Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -708,7 +708,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in5].last()}&gt;1.576 or {Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,in5].last()}&lt;1.424</expression>
-            <name>Vdimm Voltage Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>Vdimm Voltage Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -718,7 +718,7 @@
         </trigger>
         <trigger>
             <expression>{Template Sensors DN2800MT:sensor[w83627dhg-isa-0290,temp3].last()}&gt;80</expression>
-            <name>VR Temp Critical {ITEM.VALUE}] on {HOST.NAME}</name>
+            <name>VR Temp Critical {ITEM.VALUE} on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
