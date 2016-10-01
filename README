@@ -4,6 +4,11 @@ Supermicro A1SAM-2750F and A1SA2-2750F (IPMI version):
 * Under Debian / Ubuntu, OpenIPMI is currently compiled with ssl turned off (https://support.zabbix.com/browse/ZBX-6139). You will need to rebuild openipmi package in order to have ipmi working with zabbix. See https://support.zabbix.com/browse/ZBX-6139?focusedCommentId=149255&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-149255 for build instruction.
 * Template interval is set to 300s, but you might need to set a least 1 item to a 60s update interval or you might see the "Network error while retrieving IPMI data" bug (see https://support.zabbix.com/browse/ZBX-3243)
 
+Supermicro A1SA2-2750F (Zabbix Agent version):
+* copy Template.Agent.Supermicro.A1SA2-2750F.userparameter.conf to /etc/zabbix/zabbix_agentd.d/
+* make sure ipmi_devintf kernel module is loaded
+* Add read/write permission to ipmi device for zabbix (eg, chgrp zabbix /dev/ipmi0 ; chmod g+rw /dev/ipmi0)
+
 DN2800MT: Need zabbix-agent installed, using coretemp & winbond 83627ehf driver
 	  Load coretemp and w83627ehf modules in /etc/modules
 	  Based on BIOS values
