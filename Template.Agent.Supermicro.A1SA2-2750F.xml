@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.0</version>
-    <date>2016-10-01T13:06:53Z</date>
+    <version>3.2</version>
+    <date>2016-10-21T22:27:34Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -719,6 +719,7 @@
                 </item>
             </items>
             <discovery_rules/>
+            <httptests/>
             <macros/>
             <templates/>
             <screens/>
@@ -727,174 +728,259 @@
     <triggers>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.3.3VCC.last(#1)}&lt;2.789 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.3.3VCC.last(#1)}&gt;3.689</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>+3.3VCC Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.3.3VSB.last(#1)}&lt;2.789 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.3.3VSB.last(#1)}&gt;3.689</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>+3.3VSB Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.5VCC.last(#1)}&lt;4.220 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.5VCC.last(#1)}&gt;5.585</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>+5 VCC Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.5VSB.last(#1)}&lt;4.220 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.5VSB.last(#1)}&gt;5.585</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>+5VSB Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.12V.last(#1)}&lt;10.110 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.12V.last(#1)}&gt;13.386</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>+12 V Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.CPU_Temp.last(#1)}&lt;0.000 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.CPU_Temp.last(#1)}&gt;98.000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>CPU Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMA1_Temp.last()}&lt;1 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMA1_Temp.last()}&gt;90</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>DIMM A1 Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMA2_Temp.last()}&lt;1 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMA2_Temp.last()}&gt;90</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>DIMM A2 Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMB1_Temp.last()}&lt;1 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMB1_Temp.last()}&gt;90</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>DIMM B1 Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMB2_Temp.last()}&lt;1 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.DIMMB2_Temp.last()}&gt;90</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>DIMM B2 Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.FAN.last(#1)}&lt;400.000 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.FAN.last(#1)}&gt;25500.000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>FAN Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
-        </trigger>
-        <trigger>
-            <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.12V.nodata(10m)}=1</expression>
-            <name>IPMI agent on {HOST.NAME} is unreachable for 10 minutes</name>
-            <url/>
-            <status>0</status>
-            <priority>3</priority>
-            <description>Check based on ipmi 12v sensor&#13;
-Is IPMI down ?</description>
-            <type>0</type>
-            <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.Peripheral_Temp.last(#1)}&lt;-9.000 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.Peripheral_Temp.last(#1)}&gt;90.000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Peripheral Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.System_Temp.last(#1)}&lt;-9.000 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.System_Temp.last(#1)}&gt;90.000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>System Temp Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.VBAT.last(#1)}&lt;2.4 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.VBAT.last(#1)}&gt;3.69</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>VBAT Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.VCCP.last(#1)}&lt;0.441 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.VCCP.last(#1)}&gt;1.44</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>VCCP Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template Agent Supermicro A1SA2-2750F:ipmi.system.VDIMM.last(#1)}&lt;1.260 or {Template Agent Supermicro A1SA2-2750F:ipmi.system.VDIMM.last(#1)}&gt;1.810</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>VDIMM Critical [{ITEM.VALUE}] on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
     </triggers>
     <graphs>
