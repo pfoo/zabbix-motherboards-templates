@@ -5,9 +5,10 @@ Supermicro A1SAM-2750F and A1SA2-2750F (IPMI version):
 * Template interval is set to 300s, but you might need to set a least 1 item to a 60s update interval or you might see the "Network error while retrieving IPMI data" bug (see https://support.zabbix.com/browse/ZBX-3243)
 
 Supermicro A1SA2-2750F (Zabbix Agent version):
-* copy Template.Agent.Supermicro.A1SA2-2750F.userparameter.conf to /etc/zabbix/zabbix_agentd.d/
+* copy Template.Agent.Supermicro.A1SA2-2750F.userparameter.conf to /etc/zabbix/zabbix_agentd.d/ on the node running the A1SA2-2750F motherboard
 * make sure ipmi_devintf kernel module is loaded
 * Add read/write permission to ipmi device for zabbix (eg, chgrp zabbix /dev/ipmi0 ; chmod g+rw /dev/ipmi0)
+* Import Template.Agent.Supermicro.A1SA2-2750F.xml to your zabbix instance
 
 DN2800MT: Need zabbix-agent installed, using coretemp & winbond 83627ehf driver
 	  Load coretemp and w83627ehf modules in /etc/modules
@@ -20,3 +21,6 @@ D2500CC: Need zabbix-agent installed, using coretemp & winbond 83627uhg driver
 RaspberryPi:
 
 Cubox: need zabbix-agent installed and a kernel providing imx thermal sensor support (check if /sys/class/hwmon/hwmon0/temp1_input exists)
+
+Online.net / Dedibox SC with C2350: Need zabbix-agent installed, using coretemp
+				    Load coretemp module in /etc/modules
