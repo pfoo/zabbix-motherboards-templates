@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2019-01-16T09:54:33Z</date>
+    <date>2019-01-16T10:17:03Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -39,7 +39,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>rpm</units>
                     <snmpv3_contextname/>
@@ -98,7 +98,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>rpm</units>
                     <snmpv3_contextname/>
@@ -157,7 +157,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>rpm</units>
                     <snmpv3_contextname/>
@@ -216,7 +216,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -275,7 +275,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -334,7 +334,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -393,7 +393,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -452,7 +452,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -511,7 +511,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -570,7 +570,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -629,7 +629,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -688,7 +688,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <snmpv3_contextname/>
@@ -747,7 +747,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>°C</units>
                     <snmpv3_contextname/>
@@ -806,7 +806,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>°C</units>
                     <snmpv3_contextname/>
@@ -865,7 +865,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>°C</units>
                     <snmpv3_contextname/>
@@ -924,7 +924,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>°C</units>
                     <snmpv3_contextname/>
@@ -983,7 +983,7 @@
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>°C</units>
                     <snmpv3_contextname/>
