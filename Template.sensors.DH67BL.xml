@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2019-01-16T10:27:53Z</date>
+    <date>2019-01-18T18:22:28Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -748,7 +748,7 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>VR temp</name>
+                    <name>VR temperature</name>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -807,7 +807,7 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>CPU temp</name>
+                    <name>CPU temperature</name>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -866,7 +866,7 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Memory DIMM temp</name>
+                    <name>Memory DIMM temperature</name>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -925,7 +925,7 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>PCH temp</name>
+                    <name>PCH temperature</name>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -984,7 +984,7 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>PECI Agent 0 temp</name>
+                    <name>PECI Agent 0 temperature</name>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -1055,7 +1055,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in3].last()}&gt;3.63 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in3].last()}&lt;2.98</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>+3.3V voltage critical on {HOST.NAME}</name>
+            <name>+3.3V voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1071,7 +1071,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in4].last()}&gt;5.40 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in4].last()}&lt;4.60</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>+5V voltage critical on {HOST.NAME}</name>
+            <name>+5V voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1087,7 +1087,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in1].last()}&gt;12.94 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in1].last()}&lt;11.09</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>+12V voltage critical on {HOST.NAME}</name>
+            <name>+12V voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1103,7 +1103,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in7].last()}&gt;3.63 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in7].last()}&lt;2.98</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>3VSB voltage critical on {HOST.NAME}</name>
+            <name>3VSB voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1119,7 +1119,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in2].last()}&gt;3.63 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in2].last()}&lt;2.98</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>AVCC voltage critical on {HOST.NAME}</name>
+            <name>AVCC voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1135,7 +1135,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,fan2].last()}&lt;251</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>CPU fan critical on {HOST.NAME}</name>
+            <name>CPU fan is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1151,7 +1151,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,temp2].last()}&gt;93</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>CPU temp critical on {HOST.NAME}</name>
+            <name>CPU temperature is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1167,7 +1167,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,fan3].last()}&lt;251</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Front fan critical on {HOST.NAME}</name>
+            <name>Front fan is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1183,7 +1183,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,temp3].last()}&gt;90</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Memory DIMM temp critical on {HOST.NAME}</name>
+            <name>Memory DIMM temperature is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1199,7 +1199,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in5].last()}&gt;2.00 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in5].last()}&lt;0.40</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>MemV voltage critical on {HOST.NAME}</name>
+            <name>MemV voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1215,7 +1215,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in6].last()}&gt;1.60 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in6].last()}&lt;0.60</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>PCHV voltage critical on {HOST.NAME}</name>
+            <name>PCHV voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1231,7 +1231,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,temp9].last()}&gt;80</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>PECI Agent 0 temp critical on {HOST.NAME}</name>
+            <name>PECI Agent 0 temperature is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1247,7 +1247,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,fan1].last()}&lt;251</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Rear fan critical on {HOST.NAME}</name>
+            <name>Rear fan is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1263,7 +1263,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in8].last()}&gt;3.63 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in8].last()}&lt;2.70</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Vbat voltage critical on {HOST.NAME}</name>
+            <name>Vbat voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1279,7 +1279,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,in0].last()}&gt;1.60 or {Template Sensors DH67BL:sensor[nct6775-isa-0290,in0].last()}&lt;0.60</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Vcore voltage critical on {HOST.NAME}</name>
+            <name>Vcore voltage is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1295,7 +1295,7 @@
             <expression>{Template Sensors DH67BL:sensor[nct6775-isa-0290,temp1].last()}&gt;90</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>VR temp critical on {HOST.NAME}</name>
+            <name>VR temperature is critical on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
