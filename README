@@ -28,3 +28,7 @@ Cubox: need zabbix-agent installed and a kernel providing imx thermal sensor sup
 
 Online.net / Dedibox SC with C2350: Need zabbix-agent installed, using coretemp
 				    Load coretemp module in /etc/modules
+
+HP Microserver G7: Need zabbix-agent installed, using w83795 driver
+		   Load w83795 driver module in /etc/modules
+		   Based on BIOS values

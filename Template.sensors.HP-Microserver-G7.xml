@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2020-12-31T18:08:38Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Sensors HP Microserver G7</template>
+            <name>Template Sensors HP Microserver G7</name>
+            <description>Template for HP Microserver G7 motherboard using zabbix-agent</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>System fan</name>
+                </application>
+                <application>
+                    <name>System power</name>
+                </application>
+                <application>
+                    <name>System temperature</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Main fan</name>
+                    <key>sensor[w83795adg-i2c-1-2f,fan1]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>rpm</units>
+                    <applications>
+                        <application>
+                            <name>System fan</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&lt;=300</expression>
+                            <name>Main fan speed is critical</name>
+                            <priority>DISASTER</priority>
+                            <description>Server might auto-shutdown in any seconds</description>
+                        </trigger>
+                        <trigger>
+                            <expression>{last()}&lt;=500 and {last()}&gt;300</expression>
+                            <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
+                            <recovery_expression>{last()}&gt;500</recovery_expression>
+                            <name>Main fan speed is low</name>
+                            <priority>HIGH</priority>
+                            <description>If speed goes below 300rpm, server will auto-shutdown</description>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>in0 voltage</name>
+                    <key>sensor[w83795adg-i2c-1-2f,in0]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>V</units>
+                    <applications>
+                        <application>
+                            <name>System power</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=2.05 or {last()}&lt;=0</expression>
+                            <name>in0 voltage is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>in1 voltage</name>
+                    <key>sensor[w83795adg-i2c-1-2f,in1]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>V</units>
+                    <applications>
+                        <application>
+                            <name>System power</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=2.05 or {last()}&lt;=0</expression>
+                            <name>in1 voltage is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>in2 voltage</name>
+                    <key>sensor[w83795adg-i2c-1-2f,in2]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>V</units>
+                    <applications>
+                        <application>
+                            <name>System power</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=2.05 or {last()}&lt;=0</expression>
+                            <name>in2 voltage is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>in3 voltage</name>
+                    <key>sensor[w83795adg-i2c-1-2f,in3]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>V</units>
+                    <applications>
+                        <application>
+                            <name>System power</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=2.05 or {last()}&lt;=0</expression>
+                            <name>in3 voltage is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>+3.3V voltage</name>
+                    <key>sensor[w83795adg-i2c-1-2f,in12]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>V</units>
+                    <applications>
+                        <application>
+                            <name>System power</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=3.63 or {last()}&lt;=2.96</expression>
+                            <name>+3.3V voltage is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>3VSB voltage</name>
+                    <key>sensor[w83795adg-i2c-1-2f,in13]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>V</units>
+                    <applications>
+                        <application>
+                            <name>System power</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=3.63 or {last()}&lt;=2.96</expression>
+                            <name>3VSB voltage is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>CPU temperature</name>
+                    <key>sensor[w83795adg-i2c-1-2f,temp1]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>°C</units>
+                    <applications>
+                        <application>
+                            <name>System temperature</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=109</expression>
+                            <name>CPU temperature is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Northbridge temperature</name>
+                    <key>sensor[w83795adg-i2c-1-2f,temp2]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>°C</units>
+                    <applications>
+                        <application>
+                            <name>System temperature</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=105</expression>
+                            <name>Northbridge temperature is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>System temperature</name>
+                    <key>sensor[w83795adg-i2c-1-2f,temp5]</key>
+                    <value_type>FLOAT</value_type>
+                    <units>°C</units>
+                    <applications>
+                        <application>
+                            <name>System temperature</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;=44</expression>
+                            <name>System temperature is critical</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                        <trigger>
+                            <expression>{last()}&gt;=39 and {last()}&lt;44</expression>
+                            <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
+                            <recovery_expression>{last()}&lt;39</recovery_expression>
+                            <name>System temperature is high</name>
+                            <priority>HIGH</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+            <screens>
+                <screen>
+                    <name>Sensors</name>
+                    <hsize>2</hsize>
+                    <vsize>2</vsize>
+                    <screen_items>
+                        <screen_item>
+                            <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>System fan</name>
+                                <host>Template Sensors HP Microserver G7</host>
+                            </resource>
+                            <width>500</width>
+                            <height>100</height>
+                            <x>0</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <url/>
+                            <application/>
+                            <max_columns>3</max_columns>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>System temperature</name>
+                                <host>Template Sensors HP Microserver G7</host>
+                            </resource>
+                            <width>500</width>
+                            <height>100</height>
+                            <x>1</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <url/>
+                            <application/>
+                            <max_columns>3</max_columns>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>System power</name>
+                                <host>Template Sensors HP Microserver G7</host>
+                            </resource>
+                            <width>500</width>
+                            <height>100</height>
+                            <x>0</x>
+                            <y>1</y>
+                            <colspan>2</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <url/>
+                            <application/>
+                            <max_columns>3</max_columns>
+                        </screen_item>
+                    </screen_items>
+                </screen>
+            </screens>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Sensors HP Microserver G7:sensor[w83795adg-i2c-1-2f,temp1].last()}&gt;=90 and {Template Sensors HP Microserver G7:sensor[w83795adg-i2c-1-2f,temp1].last()}&lt;109</expression>
+            <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
+            <recovery_expression>{Template Sensors HP Microserver G7:sensor[w83795adg-i2c-1-2f,temp5].last()}&lt;90</recovery_expression>
+            <name>CPU temperature is high</name>
+            <priority>HIGH</priority>
+        </trigger>
+        <trigger>
+            <expression>{Template Sensors HP Microserver G7:sensor[w83795adg-i2c-1-2f,temp2].last()}&gt;=90 and {Template Sensors HP Microserver G7:sensor[w83795adg-i2c-1-2f,temp2].last()}&lt;105</expression>
+            <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
+            <recovery_expression>{Template Sensors HP Microserver G7:sensor[w83795adg-i2c-1-2f,temp5].last()}&lt;90</recovery_expression>
+            <name>Northbridge temperature is high</name>
+            <priority>HIGH</priority>
+        </trigger>
+    </triggers>
+    <graphs>
+        <graph>
+            <name>System fan</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>1A7C11</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,fan1]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>System power</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>1A7C11</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,in12]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,in13]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,in0]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>A54F10</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,in1]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,in2]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,in3]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>System temperature</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>A54F10</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,temp1]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,temp2]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Template Sensors HP Microserver G7</host>
+                        <key>sensor[w83795adg-i2c-1-2f,temp5]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
